@@ -1,0 +1,13 @@
+.rectangleBtn {
+  padding: 1rem 0;
+  width: 12rem;
+  text-align: center;
+  background-color: $WhiteClr;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: $mainSize;
+  font-weight: 600;
+  opacity: 0.9;
+}

@@ -1,0 +1,52 @@
+.headerNav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-items: baseline;
+
+    &__items {
+        display: flex;
+        font-size: $mainSize;
+    }
+    &__item {
+        margin: auto 1.5rem;
+        position: relative;
+        &--sale {
+            color: $RedClr;
+        }
+        &--sale::after,
+        &--shop::after {
+            content: 'sale';
+            position: absolute;
+            top: -1.4rem;
+            left: 70%;
+            color: $WhiteClr;
+            background-color: $OrangeClr;
+            font-size: $after;
+            border-radius: .9rem;
+            padding: .1rem .5rem;
+        }
+        &--shop::after {
+            content: 'new';
+            background-color: $BlueClr;
+        }
+    }
+    &__button {
+        font-size: $icons;
+        margin: 0 .8rem;
+        position: relative;
+        &--aftr::after {
+            position: absolute;
+            content: '0';
+            top: -.4rem;
+            left: 60%;
+            font-size: $after;
+            color: $WhiteClr;
+            background-color: $BlackClr;
+            border-radius: 50%;
+            padding: 0 .3rem;
+        }
+    }
+    
+}

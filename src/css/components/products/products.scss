@@ -1,0 +1,110 @@
+.products {
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__product {
+    width: 23%;
+    margin: 60px auto;
+    font-size: $mainSize;
+    position: relative;
+  }
+  &__photoes {
+    position: relative;
+    overflow: hidden;
+    & img {
+      width: 100%;
+    }
+    &:hover .products__animation {
+      z-index: 1;
+    }
+    &:hover .products__animation img {
+      transform: scale(1.3);
+    }
+    &:hover .products__btns {
+      top: 50%;
+    }
+  }
+  &__photo {
+    height: 350px;
+  }
+  &__title {
+    display: block;
+    margin-top: 10px;
+  }
+  &__oldPrice {
+    display: inline-block;
+    color: #878787;
+    margin: 5px 10px 5px 0;
+  }
+  &__newPrice {
+    color: #f06263;
+  }
+  &__discount {
+    position: absolute;
+    content: "";
+    width: 65px;
+    height: 65px;
+    line-height: 65px;
+    text-align: center;
+    color: white;
+    border-radius: 50%;
+    background-color: #109533;
+    top: 15px;
+    right: 15px;
+    z-index: 2;
+    &--clr {
+      background-color: $DiscountClr;
+    }
+  }
+  &__color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #64d3e3;
+    border: #878787 double;
+    display: inline-block;
+    &:nth-of-type(2) {
+      background-color: #f6f6f8;
+    }
+    &:last-of-type {
+      background-color: #222222;
+    }
+  }
+  &__animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; //
+    & img {
+      transition: 3s;
+    }
+  }
+  &__wishlist {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 18px;
+    color: $WhiteClr;
+  }
+  &__btns {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+  }
+  &__sizes {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: $headerTop;
+    text-transform: uppercase;
+    color: $WhiteClr;
+  }
+}

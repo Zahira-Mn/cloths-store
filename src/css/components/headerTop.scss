@@ -1,0 +1,56 @@
+.headerTop {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  width: 100%;
+  font-size: $headerTop;
+  background-color: $GrayClr;
+  color: $fontTop;
+
+  &__icon {
+    margin-right: 0.5rem;
+  }
+  &__mail {
+    margin-left: 2rem;
+    color: $fontTop;
+  }
+  &__discount {
+    & > span {
+      color: $RedClr;
+    }
+  }
+  &__langue {
+    position: relative;
+    &:hover .headerTop__hiddenFlags{
+      display: block;
+    }
+  }
+  &__langue,
+  &__link {
+    display: flex;
+    align-items: baseline;
+    color: $fontTop;
+    & > * {
+      margin: auto 0.2rem;
+    }
+  }
+  &__flag {
+    width: 1.8rem;
+    height: 1.1rem;
+    background-image: url("https://cdn.shopify.com/s/files/1/0332/6420/5963/t/34/assets/usd.svg?19041994");
+    background-size: cover;
+  }
+  &__downIcon {
+    font-size: 0.7rem;
+  }
+  &__hiddenFlags {
+    position: absolute;
+    background-color: $GrayClr;
+    z-index: 1;
+    top: 2.6rem;
+    right: 0;
+    box-shadow: 0 0 0.6rem;
+    padding: 1rem 1.5rem;
+    display: none;
+  }
+}

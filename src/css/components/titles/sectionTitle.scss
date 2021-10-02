@@ -1,0 +1,39 @@
+.sectionTitle {
+  text-align: center;
+  margin-top: 50px;
+  &__title {
+    text-transform: uppercase;
+    font-size: $sectionTitle;
+    width: fit-content;
+    margin: 0 auto;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 2px;
+      background-color: $BlackClr;
+      left: -70px;
+      top: 50%;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 2px;
+      background-color: $BlackClr;
+      right: -70px;
+      top: 50%;
+    }
+  }
+  &__subtitle {
+    font-family: $fontLibre;
+    font-size: $mainSize;
+    font-style: italic;
+    color: $fontTop;
+    margin-top: 8px;
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+}

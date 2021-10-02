@@ -1,0 +1,38 @@
+.sales {
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7rem;
+    margin-bottom: 10rem;
+  }
+  &__item {
+    position: relative;
+    color: white;
+    text-align: center;
+    width: 49%;
+    cursor: pointer;
+    overflow: hidden;
+    &:hover .sales__photo {
+      transform: scale(1.2);
+    }
+  }
+  &__photo {
+    position: absolute;
+    transition: 0.5s;
+    z-index: -1;
+  }
+  &__content {
+    margin: 110px auto;
+  }
+  &__title,
+  &__subtitle {
+    text-transform: uppercase;
+    font-size: 3rem;
+  }
+  &__subtitle {
+    font-size: 1.5rem;
+  }
+  &__title--big {
+    font-size: 4.5rem;
+  }
+}

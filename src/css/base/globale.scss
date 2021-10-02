@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+body {
+  box-sizing: border-box;
+  font-family: $bodyFont, "serif";
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  @media screen and (max-width: 500px) {
+    font-size: 55%;
+  }
+}
+a {
+  text-decoration: none;
+  color: $BlackClr;
+  transition: 0.5s;
+  font-family: $bodyFont, "serif";
+  text-transform: capitalize;
+}
+a:hover {
+  color: $BlueClr;
+}
+img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+ul {
+  list-style: none;
+}
+input {
+  outline: none;
+}
+button {
+  outline: none;
+  cursor: pointer;
+}
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: relative;
+}

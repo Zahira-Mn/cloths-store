@@ -1,0 +1,95 @@
+.footer {
+  background-color: $GrayClr;
+  padding: 7rem 0;
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    font-size: $mainSize;
+    color: $fontTop;
+    text-transform: capitalize;
+  }
+  &__logo img {
+    width: auto;
+  }
+  &__contact {
+    margin: 2.5rem auto;
+    display: flex;
+    & p {
+      width: 85%;
+    }
+    &--sclMedia i {
+      font-size: 14px;
+      margin: auto 1rem;
+    }
+  }
+  &__icon {
+    width: 15%;
+    font-size: 20px;
+    color: #cfcfd4;
+    text-align: center;
+  }
+  &__email {
+    text-transform: none;
+    color: $fontTop;
+  }
+  &__link {
+    color: $fontTop;
+    display: block;
+    margin: 2rem auto;
+    &--sclMedia {
+      color: $fontTop;
+      &:hover {
+        transform: translateY(-5px);
+      }
+    }
+  }
+  &__title {
+    color: $BlackClr;
+    line-height: 40px;
+    font-size: $footerTitles;
+    font-weight: 500;
+  }
+  &__p {
+    width: 300px;
+  }
+  &__signup {
+    position: relative;
+    width: 250px;
+    &--input,
+    &--button {
+      padding: 14px;
+      text-transform: capitalize;
+      border-radius: 50px;
+      background-color: transparent;
+      border: 1px solid $fontTop;
+      width: 100%;
+    }
+    &--button {
+      padding: 10px 15px;
+      color: $WhiteClr;
+      background-color: $BlackClr;
+      position: absolute;
+      top: 4px;
+      right: 2px;
+      width: auto;
+    }
+  }
+  &__cards {
+    width: auto;
+    height: auto;
+    margin-top: 3rem;
+  }
+}
+
+.copyright {
+  padding: 30px 0 ;
+  font-size: $mainSize;
+  color: $fontTop;
+  text-align: center;
+  & span {
+    color: $BlueClr;
+  }
+  &__link {
+    color: $fontTop;
+  }
+}

@@ -1,0 +1,23 @@
+.catalogues {
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 50% 50%;
+  &__catalogue1 {
+    grid-area: 1/1/3/3;
+    margin: 0 1.5rem 1.5rem 0;
+  }
+  &__catalogue2 {
+    grid-area: 1/3/2/4;
+    margin: 0 1.5rem 1.5rem;
+  }
+  &__catalogue3 {
+    grid-area: 2/3/2/4;
+    margin: 3rem 1.5rem 1.5rem;
+  }
+  &__catalogue4 {
+    grid-area: 1/4/3/5;
+    margin-left: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+}

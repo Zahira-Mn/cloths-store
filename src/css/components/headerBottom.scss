@@ -1,0 +1,58 @@
+.headerBottom {
+  padding: 30rem 0;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &__content {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    text-transform: uppercase;
+    transition: 0.5s;
+    display: none;
+  }
+  &__subTitle {
+    font-size: $subTitle;
+  }
+  &__title {
+    font-size: $title;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
+  &__link {
+    background-color: $BlackClr;
+    color: $WhiteClr;
+    padding: 1rem 3rem;
+    font-size: $mainSize;
+    font-weight: 600;
+    &:hover {
+      background-color: $HoverBlackClr;
+      color: $WhiteClr;
+    }
+  }
+  &__pagination {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    & > * {
+      background-color: $BlackClr;
+      opacity: 0.7;
+      margin: auto 0.5rem;
+      cursor: pointer;
+      width: 1.1rem;
+      height: 1.1rem;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+  }
+}
+.active {
+  display: block;
+  opacity: 1;
+}

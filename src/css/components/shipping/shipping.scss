@@ -1,0 +1,32 @@
+.shipping {
+    margin-bottom: 3rem;
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    align-items: flex-start;
+    color: $fontTop;
+  }
+  &__icon {
+    font-size: 3.5rem;
+    color: #cfcfd4;
+  }
+  &__content {
+    font-size: $mainSize;
+    margin-left: 1.5rem;
+  }
+  &__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: .5rem;
+    color: $BlackClr;
+  }
+  &__description {
+    width: 21rem;
+    &::first-letter {
+      text-transform: capitalize;
+    }
+  }
+}

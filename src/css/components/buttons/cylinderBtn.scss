@@ -1,0 +1,37 @@
+.cylinderBtn {
+  padding: 1rem 0;
+  margin: 8px auto;
+  width: 15rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: $mainSize;
+  color: $BlackClr;
+  background-color: $WhiteClr;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  &__hide {
+    background-color: black;
+    position: absolute;
+    top: 100%;
+    transition: 0.3s;
+  }
+  &:hover &__hide {
+    top: -8px;
+  }
+  &__iconClr {
+    color: white;
+    font-size: 18px;
+  }
+  &--link {
+    font-weight: 600;
+    border: 2px solid black;
+    display: block;
+    transition: .3s;
+    &:hover {
+      background-color: $BlueClr;
+      color: $WhiteClr;
+      border-color: transparent;
+    }
+  }
+}

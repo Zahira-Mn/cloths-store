@@ -1,0 +1,7 @@
+.scale {
+  overflow: hidden;
+  position: relative;
+}
+.scale:hover img{
+  transform: scale(1.2);
+}
